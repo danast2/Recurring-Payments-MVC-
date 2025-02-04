@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30904C3B2D51E59500687F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C3A2D51E59500687F1D /* AppDelegate.swift */; };
+		30904C3D2D51E59500687F1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C3C2D51E59500687F1D /* SceneDelegate.swift */; };
+		30904C422D51E59500687F1D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30904C412D51E59500687F1D /* Base */; };
+		30904C442D51E59600687F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30904C432D51E59600687F1D /* Assets.xcassets */; };
+		30904C472D51E59600687F1D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30904C462D51E59600687F1D /* Base */; };
+		30904C562D51E9EF00687F1D /* SubscriptionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C552D51E9EF00687F1D /* SubscriptionStorage.swift */; };
+		30904C582D51EABE00687F1D /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C572D51EABE00687F1D /* Subscription.swift */; };
+		30904C5A2D51EBD100687F1D /* BillingCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C592D51EBD100687F1D /* BillingCycle.swift */; };
+		30904C5C2D51FAAE00687F1D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5B2D51FAAE00687F1D /* NotificationManager.swift */; };
+		30904C5E2D52055E00687F1D /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5D2D52055E00687F1D /* SubscriptionCell.swift */; };
+		30904C602D52153100687F1D /* SubscriptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30904C372D51E59500687F1D /* Recurring Payments (MVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recurring Payments (MVC).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30904C3A2D51E59500687F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30904C3C2D51E59500687F1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		30904C412D51E59500687F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30904C432D51E59600687F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30904C462D51E59600687F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30904C482D51E59600687F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30904C552D51E9EF00687F1D /* SubscriptionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStorage.swift; sourceTree = "<group>"; };
+		30904C572D51EABE00687F1D /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		30904C592D51EBD100687F1D /* BillingCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingCycle.swift; sourceTree = "<group>"; };
+		30904C5B2D51FAAE00687F1D /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		30904C5D2D52055E00687F1D /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
+		30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30904C342D51E59500687F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30904C2E2D51E59500687F1D = {
+			isa = PBXGroup;
+			children = (
+				30904C392D51E59500687F1D /* Recurring Payments (MVC) */,
+				30904C382D51E59500687F1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30904C382D51E59500687F1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30904C372D51E59500687F1D /* Recurring Payments (MVC).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30904C392D51E59500687F1D /* Recurring Payments (MVC) */ = {
+			isa = PBXGroup;
+			children = (
+				30904C3A2D51E59500687F1D /* AppDelegate.swift */,
+				30904C3C2D51E59500687F1D /* SceneDelegate.swift */,
+				30904C542D51E76F00687F1D /* Resources */,
+				30904C532D51E75000687F1D /* Notifications */,
+				30904C522D51E74800687F1D /* Storage */,
+				30904C512D51E74000687F1D /* Controllers */,
+				30904C502D51E73900687F1D /* Views */,
+				30904C4F2D51E73000687F1D /* Models */,
+			);
+			path = "Recurring Payments (MVC)";
+			sourceTree = "<group>";
+		};
+		30904C4F2D51E73000687F1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30904C572D51EABE00687F1D /* Subscription.swift */,
+				30904C592D51EBD100687F1D /* BillingCycle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30904C502D51E73900687F1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30904C5D2D52055E00687F1D /* SubscriptionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30904C512D51E74000687F1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30904C522D51E74800687F1D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				30904C552D51E9EF00687F1D /* SubscriptionStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		30904C532D51E75000687F1D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				30904C5B2D51FAAE00687F1D /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		30904C542D51E76F00687F1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30904C402D51E59500687F1D /* Main.storyboard */,
+				30904C432D51E59600687F1D /* Assets.xcassets */,
+				30904C452D51E59600687F1D /* LaunchScreen.storyboard */,
+				30904C482D51E59600687F1D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30904C362D51E59500687F1D /* Recurring Payments (MVC) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30904C4B2D51E59600687F1D /* Build configuration list for PBXNativeTarget "Recurring Payments (MVC)" */;
+			buildPhases = (
+				30904C332D51E59500687F1D /* Sources */,
+				30904C342D51E59500687F1D /* Frameworks */,
+				30904C352D51E59500687F1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recurring Payments (MVC)";
+			productName = "Recurring Payments (MVC)";
+			productReference = 30904C372D51E59500687F1D /* Recurring Payments (MVC).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30904C2F2D51E59500687F1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					30904C362D51E59500687F1D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 30904C322D51E59500687F1D /* Build configuration list for PBXProject "Recurring Payments (MVC)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30904C2E2D51E59500687F1D;
+			productRefGroup = 30904C382D51E59500687F1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30904C362D51E59500687F1D /* Recurring Payments (MVC) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30904C352D51E59500687F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30904C442D51E59600687F1D /* Assets.xcassets in Resources */,
+				30904C472D51E59600687F1D /* Base in Resources */,
+				30904C422D51E59500687F1D /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30904C332D51E59500687F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30904C5C2D51FAAE00687F1D /* NotificationManager.swift in Sources */,
+				30904C3B2D51E59500687F1D /* AppDelegate.swift in Sources */,
+				30904C5E2D52055E00687F1D /* SubscriptionCell.swift in Sources */,
+				30904C562D51E9EF00687F1D /* SubscriptionStorage.swift in Sources */,
+				30904C582D51EABE00687F1D /* Subscription.swift in Sources */,
+				30904C5A2D51EBD100687F1D /* BillingCycle.swift in Sources */,
+				30904C3D2D51E59500687F1D /* SceneDelegate.swift in Sources */,
+				30904C602D52153100687F1D /* SubscriptionListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30904C402D51E59500687F1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30904C412D51E59500687F1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30904C452D51E59600687F1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30904C462D51E59600687F1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30904C492D51E59600687F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30904C4A2D51E59600687F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30904C4C2D51E59600687F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9Q236HNN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Recurring Payments (MVC)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniil.dementyev.Recurring-Payments--MVC-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30904C4D2D51E59600687F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9Q236HNN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Recurring Payments (MVC)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniil.dementyev.Recurring-Payments--MVC-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30904C322D51E59500687F1D /* Build configuration list for PBXProject "Recurring Payments (MVC)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30904C492D51E59600687F1D /* Debug */,
+				30904C4A2D51E59600687F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30904C4B2D51E59600687F1D /* Build configuration list for PBXNativeTarget "Recurring Payments (MVC)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30904C4C2D51E59600687F1D /* Debug */,
+				30904C4D2D51E59600687F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30904C2F2D51E59500687F1D /* Project object */;
+}
