@@ -6,14 +6,14 @@ class SubscriptionStorage {
     
     func save(_ subscriptions: [Subscription]) {
         let encoder = JSONEncoder()
-        
         do {
-            let encoderData = UserDefaults.standard.data(forKey: storageKey)
-            UserDefaults.standard.set(encoderData, forKey: storageKey)
+            let data = try encoder.encode(subscriptions)
+            UserDefaults.standard.set(data, forKey: storageKey)
         } catch {
             print("Ошибка при кодировании подписок \(error)")
         }
     }
+
     
     
     func load() -> [Subscription] {
