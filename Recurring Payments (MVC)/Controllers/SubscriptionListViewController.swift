@@ -95,7 +95,32 @@ extension SubscriptionListViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let subscriptionToRemove = subscriptions[indexPath.row]
+            removeSubscriptionByID(subscriptionToRemove.id)
+        }
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedSubscription = subscriptions[indexPath.row]
+        let detailVC = SubscriptionDetailViewController(subscription: selectedSubscription)
+        
+        detailVC?.onUpdate = { [weak self] updatedSubscription in
+            guard let index = self?.subscriptions.firstIndex(where: { $0.id == updatedSubscription.id }) else {return}
+            self?.subscriptions[index] = updatedSubscription
+            self?.saveSubscriptions()
+            self?.tableView.reloadData()
+        }
+        
+        detailVC?.onDelete = { [weak self] id in
+            self?.subscriptions.removeAll() { $0.id == id }
+            self?.saveSubscriptions()
+            self?.tableView.reloadData()
+        }
+        
+        navigationController?.pushViewController(detailVC!, animated: true)
+    }
 }
 
 extension SubscriptionListViewController: UITableViewDelegate {
