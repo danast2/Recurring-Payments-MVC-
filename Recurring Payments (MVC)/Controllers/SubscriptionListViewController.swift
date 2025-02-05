@@ -80,7 +80,7 @@ class SubscriptionListViewController: UIViewController {
 
 }
 
-extension SubscriptionListViewController: UITableViewDataSource {
+extension SubscriptionListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return subscriptions.count
     }
@@ -104,25 +104,37 @@ extension SubscriptionListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedSubscription = subscriptions[indexPath.row]
-        let detailVC = SubscriptionDetailViewController(subscription: selectedSubscription)
+        let detailVC = SubscriptionDetailViewController(subscription: selectedSubscription) // Убираем `?`
         
-        detailVC?.onUpdate = { [weak self] updatedSubscription in
-            guard let index = self?.subscriptions.firstIndex(where: { $0.id == updatedSubscription.id }) else {return}
+        detailVC.onUpdate = { [weak self] updatedSubscription in
+            guard let index = self?.subscriptions.firstIndex(where: { $0.id == updatedSubscription.id }) else { return }
             self?.subscriptions[index] = updatedSubscription
             self?.saveSubscriptions()
             self?.tableView.reloadData()
         }
         
-        detailVC?.onDelete = { [weak self] id in
-            self?.subscriptions.removeAll() { $0.id == id }
+        detailVC.onDelete = { [weak self] id in
+            self?.subscriptions.removeAll { $0.id == id }
             self?.saveSubscriptions()
             self?.tableView.reloadData()
         }
         
-        navigationController?.pushViewController(detailVC!, animated: true)
+        navigationController?.pushViewController(detailVC, animated: true) // Убираем `!`
+    }
+
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedSubscriptions = subscriptions.remove(at: sourceIndexPath.row)
+        subscriptions.insert(movedSubscriptions, at: destinationIndexPath.row)
+        saveSubscriptions()
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
     }
 }
 
-extension SubscriptionListViewController: UITableViewDelegate {
-    
-}

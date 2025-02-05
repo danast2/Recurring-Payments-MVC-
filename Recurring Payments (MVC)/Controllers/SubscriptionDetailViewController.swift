@@ -1,9 +1,4 @@
-//
-//  SubscriptionDetailViewController.swift
-//  Recurring Payments (MVC)
-//
-//  Created by Даниил Асташов on 05.02.2025.
-//
+
 
 import UIKit
 
@@ -52,7 +47,7 @@ class SubscriptionDetailViewController: UIViewController {
         return button
     }()
     
-    required init?(subscription: Subscription) {
+    required init(subscription: Subscription) {
         self.subscription = subscription
         super.init(nibName: nil, bundle: nil)
     }
@@ -72,7 +67,7 @@ class SubscriptionDetailViewController: UIViewController {
         title = "Редактировать подписку"
         view.backgroundColor = .white
         
-        let stackView = UIStackView(arrangedSubviews: [nameField, priceField, datePicker, cycleSegmentedControl, saveButton])
+        let stackView = UIStackView(arrangedSubviews: [nameField, priceField, datePicker, cycleSegmentedControl, saveButton, deleteButton])
         stackView.axis = .vertical
         stackView.spacing = 16
         stackView.translatesAutoresizingMaskIntoConstraints = false
