@@ -7,6 +7,7 @@ class SubscriptionListViewController: UIViewController {
     private var subscriptions:  [Subscription] = []
     private let storage = SubscriptionStorage()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.isEditing = false
@@ -56,7 +57,7 @@ class SubscriptionListViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension // ???
         view.addSubview(tableView)
         
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(<#T##@objc method#>))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addSubscriptionTapped))
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Порядок", style: .plain, target: self, action: #selector(toggleEditingMode))
     }
     
@@ -68,7 +69,13 @@ class SubscriptionListViewController: UIViewController {
     
     //MARK: - открытие экрана добавления подписки
     @objc private func addSubscriptionTapped() {
-        //......
+        let addVC = AddSubscriptionViewController()
+        addVC.onAdd = { [weak self] newSubscription in
+            self?.subscriptions.append(newSubscription)
+            self?.saveSubscriptions()
+            self?.tableView.reloadData()
+        }
+        navigationController?.pushViewController(addVC, animated: true)
     }
 
 }

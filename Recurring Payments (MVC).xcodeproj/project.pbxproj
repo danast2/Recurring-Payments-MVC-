@@ -18,6 +18,7 @@
 		30904C5C2D51FAAE00687F1D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5B2D51FAAE00687F1D /* NotificationManager.swift */; };
 		30904C5E2D52055E00687F1D /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5D2D52055E00687F1D /* SubscriptionCell.swift */; };
 		30904C602D52153100687F1D /* SubscriptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */; };
+		30904C622D536B7E00687F1D /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C612D536B7E00687F1D /* AddSubscriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		30904C5B2D51FAAE00687F1D /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		30904C5D2D52055E00687F1D /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
 		30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListViewController.swift; sourceTree = "<group>"; };
+		30904C612D536B7E00687F1D /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */,
+				30904C612D536B7E00687F1D /* AddSubscriptionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30904C622D536B7E00687F1D /* AddSubscriptionViewController.swift in Sources */,
 				30904C5C2D51FAAE00687F1D /* NotificationManager.swift in Sources */,
 				30904C3B2D51E59500687F1D /* AppDelegate.swift in Sources */,
 				30904C5E2D52055E00687F1D /* SubscriptionCell.swift in Sources */,
