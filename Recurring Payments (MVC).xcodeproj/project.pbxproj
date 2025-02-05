@@ -66,6 +66,7 @@
 		30904C392D51E59500687F1D /* Recurring Payments (MVC) */ = {
 			isa = PBXGroup;
 			children = (
+				30904C482D51E59600687F1D /* Info.plist */,
 				30904C3A2D51E59500687F1D /* AppDelegate.swift */,
 				30904C3C2D51E59500687F1D /* SceneDelegate.swift */,
 				30904C542D51E76F00687F1D /* Resources */,
@@ -125,7 +126,6 @@
 				30904C402D51E59500687F1D /* Main.storyboard */,
 				30904C432D51E59600687F1D /* Assets.xcassets */,
 				30904C452D51E59600687F1D /* LaunchScreen.storyboard */,
-				30904C482D51E59600687F1D /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
