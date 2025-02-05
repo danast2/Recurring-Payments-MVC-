@@ -1,9 +1,3 @@
-//
-//  AddSubscriptionViewController.swift
-//  Recurring Payments (MVC)
-//
-//  Created by Даниил Асташов on 05.02.2025.
-//
 
 import UIKit
 
