@@ -2,5 +2,9 @@
 import Foundation
 
 enum BillingCycle: String, Codable {
-    case monthly, yearly, weekly, halfOfMonth, halfOfYear
+    case monthly = "monthly"
+    case yearly = "yearly"
+    case weekly = "weekly"
+    case halfOfMonth = "halfOfMonth"
+    case halfOfYear = "halfOfYear"
 }

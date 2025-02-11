@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3006A69B2D5BD0990002880E /* BillingCycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006A69A2D5BD0990002880E /* BillingCycleTests.swift */; };
 		30904C3B2D51E59500687F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C3A2D51E59500687F1D /* AppDelegate.swift */; };
 		30904C3D2D51E59500687F1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C3C2D51E59500687F1D /* SceneDelegate.swift */; };
 		30904C422D51E59500687F1D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30904C412D51E59500687F1D /* Base */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30904C372D51E59500687F1D /* Recurring Payments (MVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Recurring Payments (MVC).app"; path = "/Users/danast/Recurring Payments (MVC)/build/Debug-iphoneos/Recurring Payments (MVC).app"; sourceTree = "<absolute>"; };
+		3006A6962D5BCEB30002880E /* Recurring Payments (MVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recurring Payments (MVC).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3006A69A2D5BD0990002880E /* BillingCycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingCycleTests.swift; sourceTree = "<group>"; };
 		30904C3A2D51E59500687F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30904C3C2D51E59500687F1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30904C412D51E59500687F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				30B33CC32D5BCB2000E5A96C /* RecurringPaymentsMVCTests */,
 				30B33CB82D5BCA9000E5A96C /* Frameworks */,
 				30B33CC22D5BCB2000E5A96C /* RecurringPaymentsMVCTests.xctest */,
+				3006A6962D5BCEB30002880E /* Recurring Payments (MVC).app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				30B33CCC2D5BCBCB00E5A96C /* SubscriptionTests.swift */,
+				3006A69A2D5BD0990002880E /* BillingCycleTests.swift */,
 			);
 			path = RecurringPaymentsMVCTests;
 			sourceTree = "<group>";
@@ -186,7 +190,7 @@
 			);
 			name = "Recurring Payments (MVC)";
 			productName = "Recurring Payments (MVC)";
-			productReference = 30904C372D51E59500687F1D /* Recurring Payments (MVC).app */;
+			productReference = 3006A6962D5BCEB30002880E /* Recurring Payments (MVC).app */;
 			productType = "com.apple.product-type.application";
 		};
 		30B33CC12D5BCB2000E5A96C /* RecurringPaymentsMVCTests */ = {
@@ -287,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3006A69B2D5BD0990002880E /* BillingCycleTests.swift in Sources */,
 				30B33CCD2D5BCBCB00E5A96C /* SubscriptionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
