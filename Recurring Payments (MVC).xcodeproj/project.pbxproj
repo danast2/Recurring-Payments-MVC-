@@ -20,10 +20,22 @@
 		30904C602D52153100687F1D /* SubscriptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */; };
 		30904C622D536B7E00687F1D /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C612D536B7E00687F1D /* AddSubscriptionViewController.swift */; };
 		30904C642D537D1E00687F1D /* SubscriptionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30904C632D537D1E00687F1D /* SubscriptionDetailViewController.swift */; };
+		30B33CCB2D5BCB5D00E5A96C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B33CB92D5BCA9100E5A96C /* XCTest.framework */; platformFilter = ios; };
+		30B33CCD2D5BCBCB00E5A96C /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B33CCC2D5BCBCB00E5A96C /* SubscriptionTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		30B33CC62D5BCB2000E5A96C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30904C2F2D51E59500687F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30904C362D51E59500687F1D;
+			remoteInfo = "Recurring Payments (MVC)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		30904C372D51E59500687F1D /* Recurring Payments (MVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recurring Payments (MVC).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30904C372D51E59500687F1D /* Recurring Payments (MVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Recurring Payments (MVC).app"; path = "/Users/danast/Recurring Payments (MVC)/build/Debug-iphoneos/Recurring Payments (MVC).app"; sourceTree = "<absolute>"; };
 		30904C3A2D51E59500687F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30904C3C2D51E59500687F1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30904C412D51E59500687F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +50,9 @@
 		30904C5F2D52153100687F1D /* SubscriptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListViewController.swift; sourceTree = "<group>"; };
 		30904C612D536B7E00687F1D /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
 		30904C632D537D1E00687F1D /* SubscriptionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailViewController.swift; sourceTree = "<group>"; };
+		30B33CB92D5BCA9100E5A96C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		30B33CC22D5BCB2000E5A96C /* RecurringPaymentsMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecurringPaymentsMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B33CCC2D5BCBCB00E5A96C /* SubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +63,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30B33CBF2D5BCB2000E5A96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B33CCB2D5BCB5D00E5A96C /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,16 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				30904C392D51E59500687F1D /* Recurring Payments (MVC) */,
-				30904C382D51E59500687F1D /* Products */,
+				30B33CC32D5BCB2000E5A96C /* RecurringPaymentsMVCTests */,
+				30B33CB82D5BCA9000E5A96C /* Frameworks */,
+				30B33CC22D5BCB2000E5A96C /* RecurringPaymentsMVCTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		30904C382D51E59500687F1D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				30904C372D51E59500687F1D /* Recurring Payments (MVC).app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		30904C392D51E59500687F1D /* Recurring Payments (MVC) */ = {
@@ -136,6 +153,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		30B33CB82D5BCA9000E5A96C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B33CB92D5BCA9100E5A96C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30B33CC32D5BCB2000E5A96C /* RecurringPaymentsMVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				30B33CCC2D5BCBCB00E5A96C /* SubscriptionTests.swift */,
+			);
+			path = RecurringPaymentsMVCTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +189,24 @@
 			productReference = 30904C372D51E59500687F1D /* Recurring Payments (MVC).app */;
 			productType = "com.apple.product-type.application";
 		};
+		30B33CC12D5BCB2000E5A96C /* RecurringPaymentsMVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B33CC82D5BCB2000E5A96C /* Build configuration list for PBXNativeTarget "RecurringPaymentsMVCTests" */;
+			buildPhases = (
+				30B33CBE2D5BCB2000E5A96C /* Sources */,
+				30B33CBF2D5BCB2000E5A96C /* Frameworks */,
+				30B33CC02D5BCB2000E5A96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30B33CC72D5BCB2000E5A96C /* PBXTargetDependency */,
+			);
+			name = RecurringPaymentsMVCTests;
+			productName = RecurringPaymentsMVCTests;
+			productReference = 30B33CC22D5BCB2000E5A96C /* RecurringPaymentsMVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +220,10 @@
 					30904C362D51E59500687F1D = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					30B33CC12D5BCB2000E5A96C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 30904C362D51E59500687F1D;
+					};
 				};
 			};
 			buildConfigurationList = 30904C322D51E59500687F1D /* Build configuration list for PBXProject "Recurring Payments (MVC)" */;
@@ -180,11 +235,12 @@
 				Base,
 			);
 			mainGroup = 30904C2E2D51E59500687F1D;
-			productRefGroup = 30904C382D51E59500687F1D /* Products */;
+			productRefGroup = 30904C2E2D51E59500687F1D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				30904C362D51E59500687F1D /* Recurring Payments (MVC) */,
+				30B33CC12D5BCB2000E5A96C /* RecurringPaymentsMVCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +253,13 @@
 				30904C442D51E59600687F1D /* Assets.xcassets in Resources */,
 				30904C472D51E59600687F1D /* Base in Resources */,
 				30904C422D51E59500687F1D /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B33CC02D5BCB2000E5A96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +283,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30B33CBE2D5BCB2000E5A96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B33CCD2D5BCBCB00E5A96C /* SubscriptionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30B33CC72D5BCB2000E5A96C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30904C362D51E59500687F1D /* Recurring Payments (MVC) */;
+			targetProxy = 30B33CC62D5BCB2000E5A96C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30904C402D51E59500687F1D /* Main.storyboard */ = {
@@ -417,6 +496,42 @@
 			};
 			name = Release;
 		};
+		30B33CC92D5BCB2000E5A96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9Q236HNN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniil.dementyev.RecurringPaymentsMVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recurring Payments (MVC).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recurring Payments (MVC)";
+			};
+			name = Debug;
+		};
+		30B33CCA2D5BCB2000E5A96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9Q236HNN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniil.dementyev.RecurringPaymentsMVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recurring Payments (MVC).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recurring Payments (MVC)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +549,15 @@
 			buildConfigurations = (
 				30904C4C2D51E59600687F1D /* Debug */,
 				30904C4D2D51E59600687F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B33CC82D5BCB2000E5A96C /* Build configuration list for PBXNativeTarget "RecurringPaymentsMVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B33CC92D5BCB2000E5A96C /* Debug */,
+				30B33CCA2D5BCB2000E5A96C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
